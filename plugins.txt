@@ -1,0 +1,35 @@
+cordova :
+
+	Calendar :
+
+		https://www.npmjs.com/package/cordova-plugin-calendar
+
+		cordova plugin add cordova-plugin-calendar
+
+	SMS :
+
+		https://www.npmjs.com/package/cordova-sms-plugin
+
+		cordova plugin add cordova-sms-plugin
+
+react-native :
+
+
+	DatePIcker :
+
+		https://github.com/xgfe/react-native-datepicker
+
+		npm install react-native-datepicker --save
+
+
+	Calendar : 
+
+		https://github.com/appsthatmatter/react-native-calendar-manager
+
+		npm install --save https://github.com/jjoe64/react-native-calendar-manager.git
+
+	Share :
+
+		https://github.com/anarchicknight/react-native-communications
+
+		npm install react-native-communications

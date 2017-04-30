@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <title>Air B&B</title>
+        <meta charset="utf-8" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" crossorigin="anonymous">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    </head>
+    <body>
+        <div class="app">
+          <header class="jumbotron">
+                <form class="form-inline container">
+                    <h1>Partir en week end ?</h1>
+                     <h2>Cette app est faites pour vous!</h2>
+                    <label>
+                        Recherchez une ville :
+                        <input type="search" name="search" class="form-control"  placeholder="Paris"/>
+                    </label>
+                    </br>
+                    <label>
+                        A combien voules-vous partir :
+                        <input type="number" name="nombre" class="form-control"  placeholder="1"/>
+                    </label>
+                    </br>
+                    <label>
+                        Date de départ:
+                        <input type="date" name="debut" class="form-control"/>
+                    </label>
+                    <label>
+                        Date d'arrivée:
+                        <input type="date" name="fin" class="form-control"/>
+                    </label>
+                    </br>
+                    <center><input type="submit" class="btn btn-primary" value="lancer la recherche" /></center>
+                </form>
+            </header>
+            <section class="resultsContainer" style="margin-bottom:10px">
+                <h2 class="page-header"></h2>
+                <ul class="list-group results">
+                </ul>
+            </section>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
